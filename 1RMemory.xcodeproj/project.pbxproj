@@ -10,9 +10,9 @@
 		FF7F6D5B1CD6AD4B00729F59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F6D5A1CD6AD4B00729F59 /* AppDelegate.swift */; };
 		FF7F6D5D1CD6AD4B00729F59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F6D5C1CD6AD4B00729F59 /* ViewController.swift */; };
 		FF7F6D601CD6AD4B00729F59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7F6D5E1CD6AD4B00729F59 /* Main.storyboard */; };
-		FF7F6D621CD6AD4B00729F59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7F6D611CD6AD4B00729F59 /* Assets.xcassets */; };
 		FF7F6D651CD6AD4B00729F59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7F6D631CD6AD4B00729F59 /* LaunchScreen.storyboard */; };
 		FF7F6D701CD6AD4B00729F59 /* _RMemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F6D6F1CD6AD4B00729F59 /* _RMemoryTests.swift */; };
+		FFC558BB1CD6AE8100F79E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC558BA1CD6AE8100F79E9C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +30,12 @@
 		FF7F6D5A1CD6AD4B00729F59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF7F6D5C1CD6AD4B00729F59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF7F6D5F1CD6AD4B00729F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FF7F6D611CD6AD4B00729F59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF7F6D641CD6AD4B00729F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF7F6D661CD6AD4B00729F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF7F6D6B1CD6AD4B00729F59 /* 1RMemoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1RMemoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7F6D6F1CD6AD4B00729F59 /* _RMemoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _RMemoryTests.swift; sourceTree = "<group>"; };
 		FF7F6D711CD6AD4B00729F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC558BA1CD6AE8100F79E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +77,10 @@
 		FF7F6D591CD6AD4B00729F59 /* 1RMemory */ = {
 			isa = PBXGroup;
 			children = (
+				FFC558B91CD6AE4B00F79E9C /* Resources */,
 				FF7F6D5A1CD6AD4B00729F59 /* AppDelegate.swift */,
 				FF7F6D5C1CD6AD4B00729F59 /* ViewController.swift */,
 				FF7F6D5E1CD6AD4B00729F59 /* Main.storyboard */,
-				FF7F6D611CD6AD4B00729F59 /* Assets.xcassets */,
 				FF7F6D631CD6AD4B00729F59 /* LaunchScreen.storyboard */,
 				FF7F6D661CD6AD4B00729F59 /* Info.plist */,
 			);
@@ -94,6 +94,14 @@
 				FF7F6D711CD6AD4B00729F59 /* Info.plist */,
 			);
 			path = 1RMemoryTests;
+			sourceTree = "<group>";
+		};
+		FFC558B91CD6AE4B00F79E9C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFC558BA1CD6AE8100F79E9C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF7F6D651CD6AD4B00729F59 /* LaunchScreen.storyboard in Resources */,
-				FF7F6D621CD6AD4B00729F59 /* Assets.xcassets in Resources */,
+				FFC558BB1CD6AE8100F79E9C /* Assets.xcassets in Resources */,
 				FF7F6D601CD6AD4B00729F59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +396,7 @@
 				FF7F6D761CD6AD4B00729F59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF7F6D771CD6AD4B00729F59 /* Build configuration list for PBXNativeTarget "1RMemoryTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +405,7 @@
 				FF7F6D791CD6AD4B00729F59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
