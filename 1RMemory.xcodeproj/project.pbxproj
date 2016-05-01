@@ -12,7 +12,7 @@
 		FFC558BB1CD6AE8100F79E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC558BA1CD6AE8100F79E9C /* Assets.xcassets */; };
 		FFC558C21CD6B1BC00F79E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC558C01CD6B1BC00F79E9C /* LaunchScreen.storyboard */; };
 		FFC558C31CD6B1BC00F79E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC558C11CD6B1BC00F79E9C /* Main.storyboard */; };
-		FFC558C51CD6B1F100F79E9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC558C41CD6B1F100F79E9C /* ViewController.swift */; };
+		FFC558C51CD6B1F100F79E9C /* RMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC558C41CD6B1F100F79E9C /* RMViewController.swift */; };
 		FFC558C71CD6B54E00F79E9C /* OneRepetitionMaximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC558C61CD6B54E00F79E9C /* OneRepetitionMaximum.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		FFC558BA1CD6AE8100F79E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFC558C01CD6B1BC00F79E9C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFC558C11CD6B1BC00F79E9C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		FFC558C41CD6B1F100F79E9C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFC558C41CD6B1F100F79E9C /* RMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMViewController.swift; sourceTree = "<group>"; };
 		FFC558C61CD6B54E00F79E9C /* OneRepetitionMaximum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneRepetitionMaximum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +134,7 @@
 		FFC558BF1CD6B17F00F79E9C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FFC558C41CD6B1F100F79E9C /* ViewController.swift */,
+				FFC558C41CD6B1F100F79E9C /* RMViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC558C51CD6B1F100F79E9C /* ViewController.swift in Sources */,
+				FFC558C51CD6B1F100F79E9C /* RMViewController.swift in Sources */,
 				FFC558C71CD6B54E00F79E9C /* OneRepetitionMaximum.swift in Sources */,
 				FF7F6D5B1CD6AD4B00729F59 /* AppDelegate.swift in Sources */,
 			);

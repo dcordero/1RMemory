@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_RMemory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RMViewController" customModule="_RMemory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -25,6 +25,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="ze1-Gr-auI">
                                 <rect key="frame" x="18" y="123" width="284" height="31"/>
+                                <connections>
+                                    <action selector="weightSliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="xLf-37-3fp"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repetitions:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYP-Aq-140">
                                 <rect key="frame" x="11" y="177" width="107" height="24"/>
@@ -34,6 +37,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="bTy-wy-K2C">
                                 <rect key="frame" x="18" y="217" width="284" height="31"/>
+                                <connections>
+                                    <action selector="repetitionsSliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="lGu-0F-jod"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZL-TE-cNm">
                                 <rect key="frame" x="126" y="180" width="8" height="21"/>
@@ -83,6 +89,11 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="repetitionsValueLabel" destination="fZL-TE-cNm" id="1x9-w1-IBs"/>
+                        <outlet property="rmValueLabel" destination="1ud-lq-0va" id="rIL-qU-cGh"/>
+                        <outlet property="weightValueLabel" destination="6k8-9K-MdK" id="QRL-07-VaH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

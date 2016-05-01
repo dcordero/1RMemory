@@ -9,7 +9,7 @@
 import Foundation
 
 class OneRepetitionMaximum {
-        
+    
     enum EstimationMethod {
         case Epleye
         case Lombardi
