@@ -206,6 +206,7 @@
 				TargetAttributes = {
 					FF7F6D561CD6AD4B00729F59 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = C3QRL9KEQ4;
 					};
 					FF7F6D6A1CD6AD4B00729F59 = {
 						CreatedOnToolsVersion = 7.3;
@@ -372,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = 1RMemory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dcordero.-RMemory";
@@ -383,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = 1RMemory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "dcordero.-RMemory";

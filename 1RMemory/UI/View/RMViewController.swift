@@ -28,7 +28,7 @@ class RMViewController: UIViewController {
         }
     }
     
-    var repetitions: Int = 0 {
+    var repetitions: Int = 1 {
         didSet {
             repetitionsValueLabel.text = String(repetitions)
         }
