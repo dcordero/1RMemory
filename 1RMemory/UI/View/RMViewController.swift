@@ -16,7 +16,7 @@ enum WeightUnit: String {
 class RMViewController: UIViewController {
 
     var presenter: RMPresenter?
-    var weightUnit: WeightUnit = .Lb
+    var weightUnit: WeightUnit = .Kg
     
     @IBOutlet weak var rmValueLabel: UILabel!
     @IBOutlet weak var weightValueLabel: UILabel!
