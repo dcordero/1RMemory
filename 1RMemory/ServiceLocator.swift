@@ -15,13 +15,17 @@ class ServiceLocator {
     
     private init() { }
     
-    func proviceRMWireframe() -> RMWireframe {
+    func provideRMWireframe() -> RMWireframe {
         return RMWireframe()
+    }
+    
+    func provideRMInteractor() -> RMInteractor {
+        return RMInteractor()
     }
     
     func provideRMViewController() -> RMViewController {
         let viewController = storyboard().instantiateViewControllerWithIdentifier("RMViewController") as! RMViewController
-        let presenter = RMPresenter(ui: viewController, wireframe: self.proviceRMWireframe())
+        let presenter = RMPresenter(ui: viewController, wireframe: provideRMWireframe(), interactor: provideRMInteractor())
         viewController.presenter = presenter
         
         return viewController

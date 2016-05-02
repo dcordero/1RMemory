@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		FF638C921CD7DF0D000C66F7 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF638C911CD7DF0D000C66F7 /* ServiceLocator.swift */; };
 		FF638C951CD7DF87000C66F7 /* RMWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF638C941CD7DF87000C66F7 /* RMWireframe.swift */; };
+		FF638C981CD80AFE000C66F7 /* RMInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF638C971CD80AFE000C66F7 /* RMInteractor.swift */; };
 		FF7F6D5B1CD6AD4B00729F59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F6D5A1CD6AD4B00729F59 /* AppDelegate.swift */; };
 		FF7F6D701CD6AD4B00729F59 /* _RMemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7F6D6F1CD6AD4B00729F59 /* _RMemoryTests.swift */; };
 		FFC558BB1CD6AE8100F79E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC558BA1CD6AE8100F79E9C /* Assets.xcassets */; };
 		FFC558C21CD6B1BC00F79E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC558C01CD6B1BC00F79E9C /* LaunchScreen.storyboard */; };
 		FFC558C31CD6B1BC00F79E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC558C11CD6B1BC00F79E9C /* Main.storyboard */; };
 		FFC558C51CD6B1F100F79E9C /* RMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC558C41CD6B1F100F79E9C /* RMViewController.swift */; };
-		FFC558C71CD6B54E00F79E9C /* OneRepetitionMaximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC558C61CD6B54E00F79E9C /* OneRepetitionMaximum.swift */; };
 		FFC558C91CD6B91400F79E9C /* RMPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC558C81CD6B91400F79E9C /* RMPresenter.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +32,7 @@
 /* Begin PBXFileReference section */
 		FF638C911CD7DF0D000C66F7 /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		FF638C941CD7DF87000C66F7 /* RMWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMWireframe.swift; sourceTree = "<group>"; };
+		FF638C971CD80AFE000C66F7 /* RMInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMInteractor.swift; sourceTree = "<group>"; };
 		FF7F6D571CD6AD4B00729F59 /* 1RMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1RMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7F6D5A1CD6AD4B00729F59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF7F6D661CD6AD4B00729F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		FFC558C01CD6B1BC00F79E9C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFC558C11CD6B1BC00F79E9C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FFC558C41CD6B1F100F79E9C /* RMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMViewController.swift; sourceTree = "<group>"; };
-		FFC558C61CD6B54E00F79E9C /* OneRepetitionMaximum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneRepetitionMaximum.swift; sourceTree = "<group>"; };
 		FFC558C81CD6B91400F79E9C /* RMPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +72,14 @@
 			path = Wireframe;
 			sourceTree = "<group>";
 		};
+		FF638C961CD80AFE000C66F7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FF638C971CD80AFE000C66F7 /* RMInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		FF7F6D4E1CD6AD4A00729F59 = {
 			isa = PBXGroup;
 			children = (
@@ -93,8 +101,7 @@
 		FF7F6D591CD6AD4B00729F59 /* 1RMemory */ = {
 			isa = PBXGroup;
 			children = (
-				FFC558BC1CD6B13D00F79E9C /* Core */,
-				FFC558BD1CD6B14600F79E9C /* UI */,
+				FFC558BD1CD6B14600F79E9C /* Modules */,
 				FFC558B91CD6AE4B00F79E9C /* Resources */,
 				FF7F6D5A1CD6AD4B00729F59 /* AppDelegate.swift */,
 				FF638C911CD7DF0D000C66F7 /* ServiceLocator.swift */,
@@ -122,22 +129,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		FFC558BC1CD6B13D00F79E9C /* Core */ = {
+		FFC558BD1CD6B14600F79E9C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				FFC558C61CD6B54E00F79E9C /* OneRepetitionMaximum.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		FFC558BD1CD6B14600F79E9C /* UI */ = {
-			isa = PBXGroup;
-			children = (
+				FF638C961CD80AFE000C66F7 /* Interactor */,
 				FF638C931CD7DF7D000C66F7 /* Wireframe */,
 				FFC558BE1CD6B17F00F79E9C /* Presenter */,
 				FFC558BF1CD6B17F00F79E9C /* View */,
 			);
-			path = UI;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		FFC558BE1CD6B17F00F79E9C /* Presenter */ = {
@@ -260,8 +260,8 @@
 			files = (
 				FFC558C51CD6B1F100F79E9C /* RMViewController.swift in Sources */,
 				FF638C921CD7DF0D000C66F7 /* ServiceLocator.swift in Sources */,
-				FFC558C71CD6B54E00F79E9C /* OneRepetitionMaximum.swift in Sources */,
 				FF638C951CD7DF87000C66F7 /* RMWireframe.swift in Sources */,
+				FF638C981CD80AFE000C66F7 /* RMInteractor.swift in Sources */,
 				FF7F6D5B1CD6AD4B00729F59 /* AppDelegate.swift in Sources */,
 				FFC558C91CD6B91400F79E9C /* RMPresenter.swift in Sources */,
 			);

@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        let wireframe = ServiceLocator.sharedIntance.proviceRMWireframe()
+        let wireframe = ServiceLocator.sharedIntance.provideRMWireframe()
         wireframe.presentRootViewControllerInWindow(window!)
         
         return true

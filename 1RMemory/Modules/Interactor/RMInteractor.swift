@@ -8,7 +8,8 @@
 
 import Foundation
 
-class OneRepetitionMaximum {
+
+class RMInteractor {
     
     enum EstimationMethod {
         case Epleye
@@ -17,7 +18,7 @@ class OneRepetitionMaximum {
         case Lander
     }
     
-    static func estimate(weight weight: Int, repetitions: Int, estimationMethod: EstimationMethod = .Epleye) -> Int {
+    func estimate(weight weight: Int, repetitions: Int, estimationMethod: EstimationMethod = .Epleye) -> Int {
         
         if (repetitions == 1) { return weight }
 
@@ -35,22 +36,22 @@ class OneRepetitionMaximum {
     
     // MARK: Private
     
-    private static func estimateEpleye(weight: Int, _ repetitions: Int) -> Int {
+    private func estimateEpleye(weight: Int, _ repetitions: Int) -> Int {
         let rm = (Double(repetitions) / 30 + 1) * Double(weight)
         return Int(rm)
     }
     
-    private static func estimateLombardi(weight: Int, _ repetitions: Int) -> Int {
+    private func estimateLombardi(weight: Int, _ repetitions: Int) -> Int {
         let rm = Double(weight) * pow(Double(repetitions), 0.10)
         return Int(rm)
     }
     
-    private static func estimateBrzycki(weight: Int, _ repetitions: Int) -> Int {
+    private func estimateBrzycki(weight: Int, _ repetitions: Int) -> Int {
         let rm = Double(weight) / (1.0278 - (0.0278 * Double(repetitions)))
         return Int(rm)
     }
     
-    private static func estimateLander(weight: Int, _ repetitions: Int) -> Int {
+    private func estimateLander(weight: Int, _ repetitions: Int) -> Int {
         let rm = Double(weight) / (1.013 - (0.0267123 * Double(repetitions)))
         return Int(rm)
     }
