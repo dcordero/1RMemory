@@ -13,25 +13,22 @@ class RMPresenter {
     let ui: RMViewController
     let wireframe: RMWireframe
     
-    let weight = 0
-    let repetitions = 0
-    
     init(ui: RMViewController, wireframe: RMWireframe) {
         self.ui = ui
         self.wireframe = wireframe
     }
     
-    func weightSliderDidChange(value: Int) {
-        
+    func weightSliderDidChange() {
+        ui.showRM(estimageOneRepetitionMaximum())
     }
     
-    func repetitionsSliderDidChange(value: Int) {
-        
+    func repetitionsSliderDidChange() {
+        ui.showRM(estimageOneRepetitionMaximum())
     }
     
     // Private
     
-    private func estimageOneRepetitionMaximum() {
-        OneRepetitionMaximum.estimate(weight: weight, repetitions: repetitions)
+    private func estimageOneRepetitionMaximum() -> Int {
+        return OneRepetitionMaximum.estimate(weight: ui.weight, repetitions: ui.repetitions)
     }
 }
