@@ -8,9 +8,15 @@
 
 import UIKit
 
+enum WeightUnit: String {
+    case Kg
+    case Lb
+}
+
 class RMViewController: UIViewController {
 
-    weak var presenter: RMPresenter?
+    var presenter: RMPresenter?
+    var weightUnit: WeightUnit = .Lb
     
     @IBOutlet weak var rmValueLabel: UILabel!
     @IBOutlet weak var weightValueLabel: UILabel!
@@ -18,7 +24,7 @@ class RMViewController: UIViewController {
 
     var weight: Int = 0 {
         didSet {
-            weightValueLabel.text = String(weight) + " Kg"
+            weightValueLabel.text = String(weight) + " " + weightUnit.rawValue
         }
     }
     
@@ -39,7 +45,7 @@ class RMViewController: UIViewController {
     }
     
     func showRM(value: Int) {
-        rmValueLabel.text = String(value) + " Kg"
+        rmValueLabel.text = String(value) + " " + weightUnit.rawValue
     }
 }
 

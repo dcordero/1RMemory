@@ -10,7 +10,7 @@ import Foundation
 
 class RMPresenter {
     
-    let ui: RMViewController
+    weak var ui: RMViewController!
     let wireframe: RMWireframe
     
     init(ui: RMViewController, wireframe: RMWireframe) {
