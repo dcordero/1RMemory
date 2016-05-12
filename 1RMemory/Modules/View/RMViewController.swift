@@ -18,6 +18,10 @@ class RMViewController: UIViewController {
     var presenter: RMPresenter?
     var weightUnit: WeightUnit = .Kg
     
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var repetitionsLabel: UILabel!
+    @IBOutlet weak var rmLabel: UILabel!
+    
     @IBOutlet weak var rmValueLabel: UILabel!
     @IBOutlet weak var weightValueLabel: UILabel!
     @IBOutlet weak var repetitionsValueLabel: UILabel!
@@ -34,6 +38,12 @@ class RMViewController: UIViewController {
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupLocalizedLabels()
+    }
+    
     @IBAction func weightSliderDidChange(sender: UISlider) {
         weight = Int(sender.value)
         presenter?.weightSliderDidChange()
@@ -46,6 +56,14 @@ class RMViewController: UIViewController {
     
     func showRM(value: Int) {
         rmValueLabel.text = String(value) + " " + weightUnit.rawValue
+    }
+    
+    // MARK: - Private
+    
+    private func setupLocalizedLabels() {
+        weightLabel.text = NSLocalizedString("Weight", comment: "Weight that the user did lifted")
+        repetitionsLabel.text = NSLocalizedString("Repetitions", comment: "Times that the user did lifted the weight")
+        rmLabel.text = NSLocalizedString("One-Repetition Maximum", comment: "Label of the result of the RM calculator")
     }
 }
 

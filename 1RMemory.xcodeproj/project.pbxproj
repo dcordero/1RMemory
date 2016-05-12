@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF0C6D7D1CE50A57002CAE08 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF0C6D7F1CE50A57002CAE08 /* Localizable.strings */; };
 		FF638C921CD7DF0D000C66F7 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF638C911CD7DF0D000C66F7 /* ServiceLocator.swift */; };
 		FF638C951CD7DF87000C66F7 /* RMWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF638C941CD7DF87000C66F7 /* RMWireframe.swift */; };
 		FF638C981CD80AFE000C66F7 /* RMInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF638C971CD80AFE000C66F7 /* RMInteractor.swift */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF0C6D801CE50A5F002CAE08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FF0C6D811CE50A7E002CAE08 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF638C911CD7DF0D000C66F7 /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		FF638C941CD7DF87000C66F7 /* RMWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMWireframe.swift; sourceTree = "<group>"; };
 		FF638C971CD80AFE000C66F7 /* RMInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMInteractor.swift; sourceTree = "<group>"; };
@@ -122,6 +125,7 @@
 		FFC558B91CD6AE4B00F79E9C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FF0C6D7F1CE50A57002CAE08 /* Localizable.strings */,
 				FFC558C01CD6B1BC00F79E9C /* LaunchScreen.storyboard */,
 				FFC558C11CD6B1BC00F79E9C /* Main.storyboard */,
 				FFC558BA1CD6AE8100F79E9C /* Assets.xcassets */,
@@ -221,6 +225,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = FF7F6D4E1CD6AD4A00729F59;
 			productRefGroup = FF7F6D581CD6AD4B00729F59 /* Products */;
@@ -239,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC558C31CD6B1BC00F79E9C /* Main.storyboard in Resources */,
+				FF0C6D7D1CE50A57002CAE08 /* Localizable.strings in Resources */,
 				FFC558C21CD6B1BC00F79E9C /* LaunchScreen.storyboard in Resources */,
 				FFC558BB1CD6AE8100F79E9C /* Assets.xcassets in Resources */,
 			);
@@ -284,6 +290,18 @@
 			targetProxy = FF7F6D6C1CD6AD4B00729F59 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF0C6D7F1CE50A57002CAE08 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF0C6D801CE50A5F002CAE08 /* en */,
+				FF0C6D811CE50A7E002CAE08 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FF7F6D721CD6AD4B00729F59 /* Debug */ = {
