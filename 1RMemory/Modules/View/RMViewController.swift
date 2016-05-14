@@ -55,7 +55,9 @@ class RMViewController: UIViewController {
     }
     
     func showRM(value: Int) {
-        rmValueLabel.text = String(value) + " " + weightUnit.rawValue
+        UIView.transitionWithView(rmValueLabel, duration: 0.25, options: [.TransitionCrossDissolve], animations: {
+            self.rmValueLabel.text = String(value) + " " + self.weightUnit.rawValue
+            }, completion: nil)
     }
     
     // MARK: - Private

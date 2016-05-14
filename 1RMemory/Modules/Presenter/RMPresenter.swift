@@ -12,6 +12,7 @@ import Foundation
 class RMPresenter {
     
     weak var ui: RMViewController!
+    
     let wireframe: RMWireframe
     let interactor: RMInteractor
     
